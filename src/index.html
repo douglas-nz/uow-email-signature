@@ -1,17 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-NZ">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+<meta charset="UTF-8">
+<title>Email Signature App - Marketing: University of Waikato</title>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta property="og:url" content="https://www.waikato.ac.nz/cme/email-signature-app">
+<meta property="og:title" content="Email Signature App">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:type" content="website">
+<link rel="apple-touch-icon" sizes="180x180" href="//www.waikato.ac.nz/apple-touch-icon.png?v=QE50XMk2oY">
+<link rel="icon" type="image/png" sizes="32x32" href="//www.waikato.ac.nz/favicon-32x32.png?v=QE50XMk2oY">
+<link rel="icon" type="image/png" sizes="16x16" href="//www.waikato.ac.nz/favicon-16x16.png?v=QE50XMk2oY">
+<link rel="manifest" href="//www.waikato.ac.nz/manifest.json?v=QE50XMk2oY">
+<link rel="mask-icon" href="//www.waikato.ac.nz/safari-pinned-tab.svg?v=QE50XMk2oY" color="#be0403">
+<link rel="shortcut icon" href="//www.waikato.ac.nz/favicon.ico?v=QE50XMk2oY">
+<meta name="theme-color" content="#ffffff">
+<link rel='stylesheet' href='https://matrix.prd.waikato.ac.nz/__data/assets/git_bridge/0004/570793/dist/css/styles.css' media='screen'>
+<link rel='stylesheet' href='https://www.waikato.ac.nz/include/fontawesome/css/all.min.css'>
+<script src='https://www.waikato.ac.nz/__matrix-data/assets/git_bridge/0018/23571/dist/js/core.min.js'></script>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+<header class="global-header">
+<div class="container-fluid">
+<!--googleoff: snippet-->
+<h2 class="visuallyhidden">Accessibility Quick Links</h2>
+<nav class="accessibility-links">
+<ul>
+<li id="skip-to-home" class="crest"><a href="https://www.waikato.ac.nz" title="Go to home page - University of Waikato"><img src="//squiz-matrix.its.waikato.ac.nz/__matrix-data/assets/file/0015/33225/CoA-transparent.svg" alt="The University of Waikato - Te Whare Wānanga o Waikato"></a></li>
+<li id="skip-to-primary" class="skip-to-primary visible-portable text--uppercase">
+<a href="#primary-menu">
+<span class="visuallyhidden">Skip to main site menu</span>
+<i class="skip-to-primary__open-icon"></i>
+<i class="skip-to-primary__close-icon"></i>
+</a>
+</li>
+<li id="skip-to-secondary" class="visuallyhidden"><a href="#section-menu">Skip to section menu</a></li>
+<li id="skip-to-search" class="visuallyhidden"><a href="#global-search">Skip to search</a></li>
+<li id="skip-to-content" class="visuallyhidden"><a href="#content">Skip to content</a></li>
+</ul>
+</nav>
+<!--googleon: snippet-->
+
+<div class="global-header__tools">
+
+<h2 class="visuallyhidden">Site Search</h2>
+<form action="#" name="searchForm" method="GET" id="global-search" class="global-search" onsubmit="window.location.href ='https://search.waikato.ac.nz/#/search?q='+this.elements['q'].value+''; return false;">
+<fieldset id="searchfieldset">
+<legend class="visuallyhidden">Search this site</legend>
+<label for="search" class="visuallyhidden"><strong>Search by:</strong>keyword or page name.</label>
+<input type="text" id="search" name="q" placeholder="Search" autocapitalize="off" aria-label="" aria-describedby="search" class="global-search__input searchinput ui-autocomplete-input">
+<button type="submit" value="Submit" name="global-search" class="global-search__submit"><span class="visuallyhidden">Submit</span><i class="global-search__submit-icon"></i></button>
+</fieldset>
+</form>
+
+
+<h2 class="visuallyhidden">Sign in access</h2><a href="//www.waikato.ac.nz/cgi-bin/landing/index.cgi" class="global-login"> <span>Login </span><span class="visuallyhidden">to your University of Waikato user account</span></a>
+
+</div>
+</div>
+<nav class="global-navigation" role="navigation">
+<div class="container-fluid">
+<!--googleoff: snippet-->
+<h2 class="visuallyhidden">Site Menu</h2>
+<div class="menu">
+<ul id="primary-menu">
+<li><a href="https://www.waikato.ac.nz/study">Study</a>
+<ul><li class="">
+<a href="https://www.waikato.ac.nz/study" class="mtitle ">
+Study
+</a>
+<ul><li><a href="https://www.waikato.ac.nz/study/why-study-at-waikato" class="">Why Waikato?</a></li>
+<li><a href="https://www.waikato.ac.nz/study/course-finder" class="">Course Finder</a></li>
+<li><a href="https://www.waikato.ac.nz/study/qualifications" class="">Qualifications</a></li>
+<li><a href="https://www.waikato.ac.nz/study/subjects" class="">Subjects</a></li>
+<li><a href="http://papers.waikato.ac.nz/" class="">Papers</a></li>
+<li><a href="https://www.waikato.ac.nz/study/postgraduate-studies" class="">Postgraduate Studies</a></li>
+<li><a href="https://www.waikato.ac.nz/international" class="">International Students</a></li>
+</ul></li><li class="">
+<a href="https://www.waikato.ac.nz/student-life" class="mtitle ">
+Student Life
+</a>
+<ul><li><a href="https://www.waikato.ac.nz/student-life/advice-and-support" class="">Advice &amp; Support</a></li>
+<li><a href="https://www.waikato.ac.nz/student-life/accommodation" class="">Accommodation</a></li>
+<li><a href="https://www.waikato.ac.nz/student-life/health-and-wellbeing" class="">Health &amp; Wellbeing</a></li>
+<li><a href="https://www.waikato.ac.nz/student-life/campuses" class="">Campuses</a></li>
+<li><a href="https://www.waikato.ac.nz/maori/" class="">Māori at Waikato</a></li>
+<li><a href="https://www.waikato.ac.nz/students/pacific-support" class="">Pacific at Waikato</a></li>
+</ul></li><li class="">
+<a href="https://www.waikato.ac.nz/study/apply" class="mtitle ">
+How to Apply
+</a>
+<ul><li><a href="https://www.waikato.ac.nz/study/enrolment" class="">Entry Requirements</a></li>
+<li><a href="https://www.waikato.ac.nz/study/costs" class="">Fees and Costs</a></li>
+<li><a href="https://www.waikato.ac.nz/scholarships/search" class="">Scholarships</a></li>
+<li><a href="https://www.waikato.ac.nz/study/key-university-dates" class="">Key University Dates</a></li>
+<li><a href="//enrol.waikato.ac.nz" class="">Apply to Enrol</a></li>
+<li><a href="https://www.waikato.ac.nz/study/careers-advisers" class="">Careers Adviser Information</a></li>
+</ul></li><li class="button-list">
+<ul><li><a href="https://www.waikato.ac.nz/study/prospectus" class="uow-btn btn-block btn-uow--white">Prospectus</a></li>
+<li><a href="https://www.waikato.ac.nz/study/key-university-dates/information-sessions" class="uow-btn btn-block btn-uow--white">Information sessions</a></li>
+<li><a href="//www.waikato.ac.nz/study/contact/" class="uow-btn btn-block btn-uow--red">Enquire now</a></li>
+<li><a href="//enrol.waikato.ac.nz" class="uow-btn btn-block btn-uow--yellow">Apply now</a></li>
+</ul></li></ul></li><li><a href="https://www.waikato.ac.nz/research/">Research</a>
+<ul><li class="">
+<a href="https://www.waikato.ac.nz/research/" class="mtitle ">
+Section Overview
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/sgr/" class="mtitle ">
+School of Graduate Research
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/research-enterprise/" class="mtitle ">
+Research Support
+</a>
+</li><li class="">
+<a href="https://profiles.waikato.ac.nz/search?type=user" class="mtitle ">
+Find Expertise
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/research/outputs/" class="mtitle ">
+Showcase Projects
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/research/units/" class="mtitle ">
+Research Units
+</a>
+</li></ul></li><li><a href="https://www.waikato.ac.nz/industry">Industry</a>
+<ul><li class="">
+<a href="https://www.waikato.ac.nz/industry" class="mtitle ">
+Section Overview
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/industry/work-with-a-student-or-graduate" class="mtitle ">
+Work with a Student or Graduate
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/industry/upskill-your-staff" class="mtitle ">
+Upskill your Staff
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/foundation/" class="mtitle ">
+Donate to the University
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/research-enterprise/research-with-waikato" class="mtitle ">
+Research &amp; Commercialisation
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/conferences-events/" class="mtitle ">
+Conferencing &amp; Venue Hire
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/industry/industry-partners" class="mtitle ">
+Industry Partners
+</a>
+</li></ul></li><li><a href="https://www.waikato.ac.nz/international">International</a>
+<ul><li class="">
+<a href="https://www.waikato.ac.nz/international" class="mtitle ">
+International Students
+</a>
+<ul><li><a href="https://www.waikato.ac.nz/international/why-new-zealand" class="">Why New Zealand?</a></li>
+<li><a href="https://www.waikato.ac.nz/international/why-study-at-waikato" class="">Why Study at Waikato?</a></li>
+<li><a href="https://www.waikato.ac.nz/study/success-stories?type=international" class="">Success Stories</a></li>
+<li><a href="https://www.waikato.ac.nz/scholarships/search#!/?page=1&For=International%20Students" class="">Scholarships</a></li>
+<li><a href="https://www.waikato.ac.nz/study/costs/tuition-costs-international" class="">Fees and Costs</a></li>
+<li><a href="https://www.waikato.ac.nz/student-life/accommodation" class="">Accommodation</a></li>
+<li><a href="https://www.waikato.ac.nz/international/events-in-your-country" class="">In Your Country</a></li>
+<li><a href="https://www.waikato.ac.nz/international/how-to-apply" class="">How to Apply</a></li>
+<li><a href="https://www.waikato.ac.nz/international/preparing-to-come-to-nz" class="">Preparing to come to New Zealand</a></li>
+</ul></li><li class="">
+<a href="https://www.waikato.ac.nz/international/study-abroad-and-exchange" class="mtitle ">
+Study Abroad &amp; Exchange
+</a>
+<ul><li><a href="https://www.waikato.ac.nz/international/study-abroad-and-exchange/study-options" class="">Study Options</a></li>
+<li><a href="https://www.waikato.ac.nz/international/study-abroad-and-exchange/why-study-at-waikato" class="">Why Study Abroad at Waikato?</a></li>
+<li><a href="https://www.waikato.ac.nz/international/study-abroad-and-exchange/apply-now" class="">Apply Now</a></li>
+</ul></li><li class="">
+<a href="https://www.waikato.ac.nz/international/partnerships" class="mtitle ">
+International Partners
+</a>
+<ul><li><a href="https://www.waikato.ac.nz/international/partnerships/partner-with-us" class="">Partner With Us</a></li>
+<li><a href="https://www.waikato.ac.nz/international/partnerships/our-partnerships" class="">Our Partnerships</a></li>
+<li><a href="https://www.waikato.ac.nz/international/partnerships/offshore-programmes" class="">Offshore Programmes</a></li>
+<li><a href="https://www.waikato.ac.nz/international/agent-toolkit" class="">Agent Toolkit</a></li>
+</ul></li><li class="button-list">
+<ul><li><a href="https://www.waikato.ac.nz/study/course-finder" class="uow-btn btn-block btn-uow--charcoal">Course Finder</a></li>
+<li><a href="https://www.waikato.ac.nz/study/contact/" class="uow-btn btn-block btn-uow--red">Enquire now</a></li>
+<li><a href="https://www.waikato.ac.nz/international/international-office" class="uow-btn btn-block btn-uow--charcoal">International Office staff</a></li>
+<li><a href="http://enrol.waikato.ac.nz/" class="uow-btn btn-block btn-uow--yellow">Apply now</a></li>
+</ul></li></ul></li><li><a href="https://www.waikato.ac.nz/about/">About Us</a>
+<ul><li class="">
+<a href="https://www.waikato.ac.nz/about/" class="mtitle ">
+Section Overview
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/about/rankings-and-reputation" class="mtitle ">
+University Rankings
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/covid-19/" class="mtitle ">
+Covid-19
+</a>
+</li><li class="">
+<a href="https://www.waikato.ac.nz/news-opinion" class="mtitle highlight-dark">
+<div style="font-size:11px;font-family:Arial,sans-serif;color:#000; padding-bottom: 7px;text-align: left; font-weight: bold;line-height:100%;mso-line-height-rule: exactly;" v-if="department1">
+{{ department1Rendered }}
+</div>
+<div style="font-size:11px;font-family:Arial,sans-serif;color:#000; padding-bottom: 7px;text-align: left; font-weight: bold;line-height:100%;mso-line-height-rule: exactly;" v-if="department2">
+{{ department2Rendered }}
+</div>
+<div style="font-size:11px;font-family:Arial,sans-serif;color:#000;text-align: left; padding-bottom: 7px; font-weight: normal;line-height:100%;mso-line-height-rule: exactly;" v-if="phone || mobile || additionalContact">
+<span v-if="phone">Ph: {{ phone }}</span>
+<span v-if="mobile && phone" style="font-size:11px;font-family:Arial,sans-serif;color:#be0403;font-weight: normal;">&nbsp;|&nbsp;</span>
+<span v-if="mobile">Mobile: {{ mobile }}</span>
+<span v-if="phone && additionalContact" style="font-size:11px;font-family:Arial,sans-serif;color:#be0403;font-weight: normal;">&nbsp;|&nbsp;</span>
+<span v-if="additionalContact"> {{ additionalContact }}</span>
+</div>
+<div style="font-size:11px;font-family:Arial,sans-serif;color:#000; padding-bottom: 7px;text-align: left; font-weight: normal;line-height:100%;mso-line-height-rule: exactly;" v-if="location">
+<div style="padding-bottom: 7px;">University of Waikato<span style="font-size:11px;font-family:Arial,sans-serif; color:#be0403; font-weight: normal;"> &nbsp;|&nbsp;</span> Private Bag 3105 <span v-if="location !== 'Hamilton'">
+<span style="font-size:11px;font-family:Arial,sans-serif; color:#be0403; font-weight: normal;"> &nbsp;|&nbsp;</span> Hamilton</span>
+</div>
+<span v-if="location == 'Hamilton'">Hamilton 3240</span>
+<span v-if="location == 'Tauranga'">Tauranga campus<span style="font-size:11px;font-family:Arial,sans-serif; color:#be0403; font-weight: normal;"> &nbsp;|&nbsp;</span>101-121 Durham Street</span>
+<span v-if="location == 'Other'">{{ locationOther }}</span>
+<span v-if="location !== 'Other'"><span style="font-size:11px;font-family:Arial,sans-serif;color:#be0403;font-weight: normal;">&nbsp;|&nbsp;</span> New Zealand</span>
+</div>
+<div v-if="website" style="font-size:11px;font-family:Arial,sans-serif;color:#75787c;text-align: left; font-weight: bold;mso-line-height-rule: exactly;">
+<a style="color:#277bbe;text-decoration:none;" v-bind:href="'http://' + website">{{ website }}</a>
+</div>
+<div v-if="client === 'gmail' || client === 'appleMail'">
+<img width="175" height="64" style="width: 175px; height: 64px;" src="https://www.waikato.ac.nz/email-templates/signatures/uow-logo@2x.png" alt="University of Waikato">
+</div>
+<div v-if="client === 'outlook'">
+<img width="175" height="64" style="width: 175px; height: 64px;" src="https://www.waikato.ac.nz/email-templates/signatures/uow-logo@1x.png" alt="University of Waikato">
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top: 20px;">
+<div style="font-size:11px;font-family:Arial,sans-serif;color:#525252;text-align: left; font-weight: normal;line-height:140%;mso-line-height-rule: exactly;">
+<em>The content of this email is confidential and intended for the recipient specified in message only, unless otherwise stated.</em>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="button-wrapper">
+<transition name="fade">
+<div v-if="isGmailIsFilled || isMailIsFilled || isOutlookIsFilled" class="button-container">
+<button @click.stop.prevent="copy">{{copyText}}
+<img src="https://clipboardjs.com/assets/images/clippy.svg">
+</button>
+</div>
+</transition>
+</div>
+</div>
+</div>
+</div>
+</div>
+<textarea ref='textarea'></textarea>
+<transition name="notification">
+<div class="notification" v-if="signatureCopied">
+<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z" class=""></path></svg> <span>Signature Copied!</span>
+</div>
+</transition>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+    // Count how many spaces are used
+    var countSpaces = function(str) {
+      var re = /\s/g;
+      return ((str || '').match(re) || []).length;
+    }
+
+    //Vue App
+    var app = new Vue({
+      el: '#app',
+      data: {
+        signOff: '',
+        signOffOther: '',
+        title: '',
+        titleOther: '',
+        name: '',
+        position: '',
+        department1: '',
+        department1Other: '',
+        department2: '',
+        department2Other: '',
+        phone: '',
+        mobile: '',
+        additionalContact: '',
+        client: '',
+        location: '',
+        locationOther: '',
+        signatureCopied: false,
+        copyText: 'Copy Signature',
+        mobileHasSpace: false,
+        phoneHasSpace: false,
+        website: 'waikato.ac.nz'
+      },
+      methods: {
+        download: function() {
+          var a = document.body.appendChild(
+            document.createElement("a")
+          );
+          a.download = "uow_signature.htm";
+          a.href = "data:text/html," + this.$refs.signatureContainer.innerHTML;
+          a.click();
+        },
+        copy: function() {
+          var textarea = this.$refs.textarea;
+          var signatureHTML = this.$refs.signatureContainer.innerHTML
+          // Copy signature html to text area
+          textarea.innerHTML = signatureHTML;
+          
+          // Select contents of textarea
+          textarea.select();
+          
+          // Set data type
+          function listener(e) {
+             e.clipboardData.setData("text/html", signatureHTML);
+             e.clipboardData.setData("text/plain", signatureHTML);
+             e.preventDefault();
+          }
+          
+          try {
+            // Copy selection
+            document.addEventListener('copy', listener);
+            document.execCommand('copy');
+            this.signatureCopied = true;
+            var that = this;
+            setTimeout(function(){
+              that.signatureCopied = false;
+            },3000);       
+            // Clean out textarea
+            textarea.innerHTML = '';
+          } catch(error) {
+            alert('Sorry!, something went wrong.');
+          }
+        },
+        phoneHasSpaces: function() {
+
+            if (countSpaces(this.phone) >= 2) {
+                this.phoneHasSpace = true;
+            } else {
+                this.phoneHasSpace = false;
+            }
+        },
+        mobileHasSpaces: function() {
+            
+            if (countSpaces(this.mobile) >= 2) {
+                this.mobileHasSpace = true;
+            } else {
+                this.mobileHasSpace = false;
+            }
+        },
+      },
+      computed: {
+        department1Rendered: function() {
+          if (this.department1 === 'Other/Free Text') {
+            return this.department1Other;
+          } else {
+            return this.department1;
+          }
+        },
+        department2Rendered: function() {
+          if (this.department2 === 'Other/Free Text') {
+            return this.department2Other;
+          } else {
+            return this.department2;
+          }
+        },
+        titleRendered: function() {
+          if (this.title === 'Other/Free Text') {
+            return this.titleOther;
+          } else {
+            return this.title;
+          }
+        },
+        signOffRendered: function() {
+          if (this.signOff === 'Other/Free Text') {
+            return this.signOffOther;
+          } else {
+            return this.signOff;
+          }
+        },
+        requiredIsFilled: function() {
+          return this.name !== '' &&
+             this.position !== '' &&
+             this.location !== '' &&
+             this.department !== '';
+        },
+        isOutlookIsFilled: function() {
+           return this.requiredIsFilled && this.client === 'outlook';
+        },
+        isGmailIsFilled: function() {
+           return this.requiredIsFilled && this.client === 'gmail';
+        },
+        isMailIsFilled: function() {
+           return this.requiredIsFilled && this.client === 'appleMail';
+        }
+      }
+    });
+
+</script>
+</section>
+
+
+<!--googleoff: snippet-->
+<aside class="right-column hidden" id="seeAlso">
+</aside>
+<!--googleon: snippet-->
+
+</div>
+</div>
+</main>
+<button title="Go to top of page" class="top-of-page"><i class="fas fa-chevron-up"></i></button>
+
+<footer class="global-footer">
+
+<div class="global-footer__buttons">
+<div class="container-fluid">
+<ul>
+<li class="col-md-4 col-xs-12"><a href="https://www.waikato.ac.nz/study/contact/" class="uow-btn btn-block btn-uow--white">Study Enquiries</a></li>
+<li class="col-md-4 col-xs-12"><a href="https://www.waikato.ac.nz/study/prospectus.shtml" class="uow-btn btn-block btn-uow--white">Prospectus</a></li>
+<li class="col-md-4 col-xs-12"><a href="http://enrol.waikato.ac.nz" class="uow-btn btn-block btn-uow--yellow">Apply now</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="global-footer__trailer">
+<div class="container-fluid">
+<h2 class="col-md-3 col-xs-12">Get in touch with us</h2>
+<p class="col-md-3 col-xs-6"><span>In New Zealand </span><em><a href="tel:08009245286">0800 WAIKATO</a></em></p>
+<p class="col-md-3 col-xs-6"><span>International </span><em><a href="tel:006478384610">+64 7 838 4610</a></em></p>
+</div>
+</div>
+
+<div class="global-footer__links container-fluid">
+<h2 class="visuallyhidden">University links</h2>
+<div data-js="panel">
+<h3><a href="https://www.waikato.ac.nz/study" data-js="collapse">Study <i aria-hidden="true"></i></a></h3><ul>
+<li><a href="https://www.waikato.ac.nz/study/why-study-at-waikato">Why Study at UoW</a></li><li><a href="https://www.waikato.ac.nz/international">International Students</a></li><li><a href="https://www.waikato.ac.nz/study/course-finder">Course Finder</a></li><li><a href="https://www.waikato.ac.nz/study/postgraduate-studies">Postgraduate Studies</a></li><li><a href="https://www.waikato.ac.nz/study/enrolment">Entry Requirements</a></li><li><a href="https://www.waikato.ac.nz/study/costs">Fees and Costs</a></li><li><a href="https://www.waikato.ac.nz/scholarships/search">Scholarships</a></li><li><a href="https://www.waikato.ac.nz/study/key-university-dates">Key University Dates</a></li>
+</ul></div><div data-js="panel">
+<h3><a href="https://www.waikato.ac.nz/student-life" data-js="collapse">Student Life <i aria-hidden="true"></i></a></h3><ul>
+<li><a href="https://www.waikato.ac.nz/student-life/accommodation">Accommodation</a></li><li><a href="https://www.waikato.ac.nz/student-life/health-and-wellbeing">Health &amp; Wellbeing</a></li><li><a href="https://www.waikato.ac.nz/student-life/campuses">Campuses</a></li><li><a href="https://www.waikato.ac.nz/student-life/advice-and-support">Advice &amp; Support</a></li><li><a href="https://www.waikato.ac.nz/study/glossary-of-university-terms">Glossary of University Terms</a></li>
+</ul></div><div data-js="panel-parent">
+<div data-js="panel">
+<h3><a href="https://www.waikato.ac.nz/research/" data-js="collapse">Research<i aria-hidden="true"></i></a></h3><ul>
+<li><a href="https://www.waikato.ac.nz/research-enterprise/">Research Support</a></li><li><a href="https://profiles.waikato.ac.nz/search?type=user">Find Expertise</a></li>
+</ul> </div> <div data-js="panel">
+<h3><a href="https://www.waikato.ac.nz/industry/" data-js="collapse">Industry <i aria-hidden="true"></i></a></h3><ul>
+<li><a href="https://www.waikato.ac.nz/industry/work-with-a-student-or-graduate">Work with a Student or Graduate</a></li><li><a href="https://www.waikato.ac.nz/industry/upskill-your-staff">Upskill your Staff</a></li><li><a href="https://www.waikato.ac.nz/foundation/">Donate to the University</a></li><li><a href="https://www.waikato.ac.nz/research-enterprise/research-with-waikato">Research &amp; Commercialisation</a></li><li><a href="https://www.waikato.ac.nz/conferences-events/">Conferencing &amp; Venue Hire</a></li><li><a href="https://www.waikato.ac.nz/industry/industry-partners">Industry Partners</a></li>
+</ul> </div>
+</div> <div data-js="panel">
+<h3><a href="https://www.waikato.ac.nz/international" data-js="collapse">International <i aria-hidden="true"></i></a></h3><ul>
+<li><a href="https://www.waikato.ac.nz/international/partnerships">Partnerships</a></li><li><a href="https://www.waikato.ac.nz/international">International Students</a></li><li><a href="https://www.waikato.ac.nz/international/study-abroad-and-exchange">Study Abroad &amp; Exchange</a></li>
+</ul></div><div data-js="panel">
+<h3><a href="https://www.waikato.ac.nz/about/" data-js="collapse">About Us <i aria-hidden="true"></i></a></h3><ul>
+<li><a href="https://www.waikato.ac.nz/about/rankings-and-reputation">University Rankings</a></li><li><a href="https://www.waikato.ac.nz/covid-19/">Covid-19</a></li><li><a href="https://www.waikato.ac.nz/news-opinion">News &amp; Opinion</a></li><li><a href="https://www.waikato.ac.nz/major-projects/">Major Projects</a></li><li><a href="https://www.waikato.ac.nz/maori/">Māori @ Waikato</a></li><li><a href="https://www.waikato.ac.nz/vacancies/">Job Vacancies</a></li><li><a href="https://profiles.waikato.ac.nz/search?type=user">Staff Profiles</a></li><li><a href="https://www.waikato.ac.nz/contacts/">Contact Us</a></li><li><a href="https://www.waikato.ac.nz/site-index">Site Index</a></li>
+</ul></div>
+</div>
+
+<div class="global-footer__utility">
+<h2 class="visuallyhidden">Site Information</h2>
+<div class="container-fluid">
+<ul>
+<li><a href="https://www.waikato.ac.nz/">The University of Waikato <span lang="mi">Te Whare Wānanga o Waikato</span></a></li>
+<li><a href="https://www.waikato.ac.nz/contacts/feedback?url=www.waikato.ac.nz%2Fcme%2Femail-signature-app" rel="nofollow">Site Feedback &amp; Requests</a></li>
+<li><a href="https://www.waikato.ac.nz/copyright/">Copyright &amp; Legal Statement</a></li>
+</ul>
+
+<div class="social-links">
+<h2>Stay connected</h2>
+<ul>
+<li><a href="https://www.linkedin.com/edu/school?id=15520&amp;trk=edu-cp-logo" aria-label="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a></li>
+<li><a href="https://www.instagram.com/waikatouniversity" aria-label="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>
+<li><a href="https://www.facebook.com/WaikatoUniversity" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f"></i></a></li>
+<li><a href="https://twitter.com/waikato" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter"></i></a></li>
+<li><a href="https://www.tiktok.com/@waikatouni?lang=en" aria-label="TikTok"><i aria-hidden="true" class="fab fa-tiktok"></i></a></li>
+<li><a href="https://www.youtube.com/user/UniversityWaikato" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube"></i></a></li>
+<li><a href="https://www.waikato.ac.nz/contacts/#Connect-with-us" aria-label="WeChat"><i aria-hidden="true" class="fab fa-weixin"></i></a></li>
+<li id='womens-refuge' class='social-links_refuge'><img class='womens-refuge' src='https://shielded.co.nz/img/custom-logo.png' style='cursor: pointer; float:left;' width='32'></li>
+</ul>
+<script src="https://staticcdn.co.nz/embed/embed.js"></script>
+<script>
+    (function () {
+        window.onload = function(){
+            var frameName = new ds07o6pcmkorn({
+                openElementId: '#womens-refuge'
+            });
+            frameName.init();
+        }
+    })();
+</script>
+</div>
+
+</div>
+</div>
+
+</footer>
+
+<noscript>
+  <div><strong>NB: Your browser has JavaScript disabled or does not support JavaScript.</strong><br>Elements of this website require JavaScript, and will not function unless you enable it or use another browser with JavaScript support.</div>
+</noscript>
 </body>
 
 </html>
